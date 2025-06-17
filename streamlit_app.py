@@ -26,8 +26,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 # st.stop()
 
 pd_df = my_dataframe.to_pandas()
-st.dataframe(pd_df)
-st.stop()
+# st.dataframe(pd_df)
+# st.stop()
 
 name_on_smoothie = st.text_input("Name on Smoothie: ")
 st.write("The name on Smoothie will be: " + name_on_smoothie)
